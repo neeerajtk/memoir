@@ -8,10 +8,69 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 12vh;
     background-color: rgb(36, 36, 36);
 } 
 
 .logo{
     color: rgb(233, 233, 233);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.burger{
+    display: none;
+}
+
+.burger div {
+    height: 2px;
+    width: 20px;
+    margin: 5px;
+    border-radius: 20%;
+    background-color: rgb(233, 233, 233);
+
+}
+
+@media screen and (max-width: 760px){
+   .body{
+       overflow-x: hidden;
+   }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(36, 36, 36);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
 }

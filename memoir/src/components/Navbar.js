@@ -9,13 +9,18 @@ function Navbar() {
     return (
         <nav>  
         <div className="logo">
-          <h4>MEMOIR</h4>
+          <h4>Memoir</h4>
         </div>
-        <ul className="container">  
-          <li><a href="#">Logo</a></li>  
+        <ul className="nav-links">  
+          <li><a href="#">Dark Mode</a></li>  
           <li><a href="#">Change View</a></li>  
           <li><a href="#">Login</a></li>  
         </ul>  
+        <div className="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </nav>
 
 
