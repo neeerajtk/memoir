@@ -8,10 +8,13 @@ function Navbar() {
 
     return (
         <nav>  
+        <div className="logo">
+          <h4>MEMOIR</h4>
+        </div>
         <ul className="container">  
-          <li>Logo</li>  
-          <li>Change View</li>  
-          <li>Login</li>  
+          <li><a href="#">Logo</a></li>  
+          <li><a href="#">Change View</a></li>  
+          <li><a href="#">Login</a></li>  
         </ul>  
       </nav>
 
