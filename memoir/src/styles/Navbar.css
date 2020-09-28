@@ -66,11 +66,17 @@ nav{
         align-items: center;
         width: 100%;
         transform: translateX(100%);
+        transition: transform 0.5s ease-in;
     }
     .nav-links li {
         opacity: 0;
     }
     .burger{
         display: block;
+        cursor: pointer;
     }
+}
+
+.nav-active{
+    transform: translateX(0%);
 }
