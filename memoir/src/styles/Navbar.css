@@ -12,11 +12,16 @@ nav{
     background-color: rgb(36, 36, 36);
 } 
 
+
 .logo{
-    color: rgb(233, 233, 233);
+    color: rgb(218, 216, 216);
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 20px;
+}
+
+.logo:hover{
+    color: white;
 }
 
 .nav-links{
@@ -31,14 +36,23 @@ nav{
 
 .nav-links a{
     text-decoration: none;
-    color: rgb(233, 233, 233);
+    color: rgb(218, 216, 216);
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 12px;
 
 }
 
+i {
+    size: 40px;
+}
+
+.nav-links a:hover{
+    color: white;
+}
+
 .burger{
+
     display: none;
 }
 

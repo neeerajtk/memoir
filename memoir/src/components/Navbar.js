@@ -11,9 +11,9 @@ function Navbar() {
           <h4>Memoir</h4>
         </div>
         <ul className={`nav-links ${menu ? "nav-active": ""}`}>  
-          <li><a href="#">Dark Mode</a></li>  
-          <li><a href="#">Change View</a></li>  
-          <li><a href="#">Login</a></li>  
+          <li><a href="#"><i class="far fa-lightbulb fa-lg"></i> </a></li>  
+          <li><a href="#"><i class="fas fa-retweet fa-lg"></i> </a></li>  
+          <li><a href="#"><i class="fas fa-key fa-lg"></i> </a></li>  
         </ul>  
         <div className="burger" onClick={()=> setMenu(!menu)}>
           <div></div>
