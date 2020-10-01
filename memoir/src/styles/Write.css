@@ -1,4 +1,11 @@
 .card { 
     z-index: -100;
+    width: 90%;
+    margin-left: 85px;
+    height: 90vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
 
 }
+

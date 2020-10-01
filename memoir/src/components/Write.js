@@ -6,7 +6,7 @@ import '../styles/Write.css';
 function Write() {
     return (
         <div>
-            <Card style={{ width: '18rem' }}>
+            <Card>
             <Card.Body>
                 <Card.Title>Note Heading</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Date</Card.Subtitle>

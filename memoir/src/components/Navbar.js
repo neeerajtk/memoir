@@ -8,7 +8,7 @@ function Navbar() {
     return (
         <nav className="nav-active">  
         <div className="logo">
-          <h4>SPACE X</h4>
+          <h4>MEMOIR</h4>
         </div>
         <ul className={`nav-links ${menu ? "nav-active": ""}`}>  
           <li><a href="#" title="Switch Dark Mode"><i className="fas fa-lightbulb fa-lg"></i></a></li>  
