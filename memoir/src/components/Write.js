@@ -6,7 +6,6 @@ import '../styles/Write.css';
 
 
 function Write() {
-    const [date,setDate]= useState(Date().toLocaleString().slice(0,21));
     return (
         <div>
             <Card.Body>
