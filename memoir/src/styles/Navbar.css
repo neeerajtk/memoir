@@ -4,6 +4,9 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;}
 
+h4{
+    font-weight: bold;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -66,10 +69,11 @@ i {
 }
 
 @media screen and (max-width: 760px){
-   .body{
+   body{
        overflow-x: hidden;
    }
     .nav-links{
+        z-index: 100;
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -107,5 +111,3 @@ i {
         transform: translateX(0px);
     }
 }
-
-
