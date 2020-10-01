@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {Form} from 'react-bootstrap';
+import {Form,Button} from 'react-bootstrap';
 import '../styles/InpForm.css';
 
 function InpForm() {
@@ -16,6 +16,9 @@ function InpForm() {
     {/* <Form.Label>Example textarea</Form.Label> */}
     <Form.Control as="textarea" rows="20" placeholder="Diary Content" />
   </Form.Group>
+  <Button variant="outline-success">Save</Button>
+  <Button variant="outline-danger">Discard</Button>
+
 </Form>
         </div>
     )
