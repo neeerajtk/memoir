@@ -17,7 +17,7 @@ function InpForm() {
     <Form.Control as="textarea" rows="20" placeholder="Diary Content" />
   </Form.Group>
   <Button variant="outline-success">Save</Button>
-  <Button variant="outline-danger">Discard</Button>
+  <Button variant="outline-dark">Discard</Button>
 
 </Form>
         </div>

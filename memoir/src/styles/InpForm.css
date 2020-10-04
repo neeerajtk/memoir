@@ -1,3 +1,9 @@
 .card-body{
     width: 100%;
+    align-items:center;
+}
+
+Button{
+    margin-left: 10px;
+    align-items: center;
 }
