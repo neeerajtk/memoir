@@ -3,8 +3,22 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Write from './components/Write';
 import SignIn from './components/SignIn';
+import {auth} from './firebase/farebase.utils'; 
 
-function App() {
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      currentUser: null
+    }
+  }
+
+  componentDidMount(){
+    auth.onAuthStateChanged(user => {
+      this.setState({currentUser: user})
+    })
+  }
+  
   return (
     <div>
       {/* <Navbar/>
