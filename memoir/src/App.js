@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import {Switch, Route, Redirect} from 'react-router-dom';
+
 import Write from './components/Write';
 import SignIn from './components/SignIn';
 import {auth} from './firebase/farebase.utils'; 
@@ -31,9 +33,19 @@ class App extends React.Component {
 
   return (
     <div>
-     <Navbar user={this.state.currentUser}/>
-      {/* <Write/>  */}
-      <SignIn/>
+       <Switch>
+          <Route exact path='/' component={Write} />
+          <Route 
+            exact 
+            path='/signin' 
+            render={()=>this.props.currentUser ? (
+            <Redirect to='/' />
+            ):(
+            <SignIn/>
+            )
+            }
+          />
+        </Switch>
     </div>
   );
 }}
