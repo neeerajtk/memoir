@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import {Switch, Route, Redirect} from 'react-router-dom';
+import {Switch, Route, Redirect, BrowserRouter} from 'react-router-dom';
 
 import Write from './components/Write';
 import SignIn from './components/SignIn';
@@ -32,7 +32,10 @@ class App extends React.Component {
   render(){
 
   return (
-    <div>
+
+      <BrowserRouter>    
+      <div>
+      <Navbar/>
        <Switch>
           <Route exact path='/' component={Write} />
           <Route 
@@ -46,7 +49,9 @@ class App extends React.Component {
             }
           />
         </Switch>
-    </div>
+         </div>
+        </BrowserRouter>
+   
   );
 }}
 

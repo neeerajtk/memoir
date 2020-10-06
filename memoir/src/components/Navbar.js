@@ -5,7 +5,7 @@ import '../styles/Navbar.css';
 
 
 
-function Navbar({user}) {
+function Navbar({currentUser}) {
   const [menu, setMenu] = useState(false);
     return (
         <nav className="nav-active">  
@@ -16,8 +16,11 @@ function Navbar({user}) {
           <li><Link to="/"><i className="fas fa-lightbulb fa-lg"></i></Link></li>  
           <li><Link to="/"><i className="fas fa-retweet fa-lg"></i></Link></li>  
           <li><Link to="/"><i className="fas fa-key fa-lg"></i></Link></li>  
-          {user ? <li> {user} </li>
-            :<li> </li> 
+          { 
+          currentUser ?
+          <div onClick={()=>auth.signOut()}>SIGN OUT</div>
+          :
+          <Link to="/signin">SIGN IN</Link>
         } 
         </ul>  
         <div className="burger" onClick={()=> setMenu(!menu)}>
