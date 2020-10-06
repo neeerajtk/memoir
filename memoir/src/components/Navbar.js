@@ -5,7 +5,7 @@ import '../styles/Navbar.css';
 
 
 
-function Navbar({currentUser}) {
+function Navbar(props) {
   const [menu, setMenu] = useState(false);
     return (
         <nav className="nav-active">  
@@ -17,7 +17,7 @@ function Navbar({currentUser}) {
           <li><Link to="/"><i className="fas fa-retweet fa-lg"></i></Link></li>  
           <li><Link to="/"><i className="fas fa-key fa-lg"></i></Link></li>  
           { 
-          currentUser ?
+          props.currentUser ?
           <div onClick={()=>auth.signOut()}>SIGN OUT</div>
           :
           <Link to="/signin">SIGN IN</Link>
