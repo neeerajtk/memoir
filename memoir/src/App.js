@@ -31,8 +31,8 @@ class App extends React.Component {
 
   return (
     <div>
-      {/* <Navbar/>
-      <Write/> */}
+     <Navbar user={this.state.currentUser}/>
+      {/* <Write/>  */}
       <SignIn/>
     </div>
   );
