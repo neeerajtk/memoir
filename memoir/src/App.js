@@ -41,7 +41,7 @@ class App extends React.Component {
           <Route 
             exact 
             path='/signin' 
-            render={()=>this.props.currentUser ? (
+            render={()=>this.state.currentUser ? (
             <Redirect to='/' />
             ):(
             <SignIn/>
