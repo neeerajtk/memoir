@@ -6,27 +6,27 @@ import {Switch, Route, Redirect, BrowserRouter} from 'react-router-dom';
 import Write from './components/Write';
 import SignIn from './components/SignIn';
 import {auth} from './firebase/farebase.utils'; 
-
+ 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
       currentUser: null
-    }
+    };
   }
 
   unSubscribeFromAuth = null;
 
   componentDidMount(){
     this.unSubscribeFromAuth =  auth.onAuthStateChanged(user => {
-      this.setState({currentUser: user})
+      this.setState({currentUser: user});
       console.log(user);
       
     })
   }
 
   componentWillUnmount(){
-    this.unSubscribeFromAuth()
+    this.unsubscribeFromAuth();
   }
 
   render(){
@@ -35,7 +35,7 @@ class App extends React.Component {
 
       <BrowserRouter>    
       <div>
-      <Navbar/>
+      <Navbar currentUser={this.state.currentUser}/>
        <Switch>
           <Route exact path='/' component={Write} />
           <Route 
