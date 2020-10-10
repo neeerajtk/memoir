@@ -73,6 +73,7 @@ i {
        overflow-x: hidden;
    }
     .nav-links{
+        margin-top: 8px;
         z-index: 100;
         position: absolute;
         right: 0px;
@@ -110,4 +111,14 @@ i {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.sign-out{
+    margin-top: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+li{
+    margin-top: 8px;
 }

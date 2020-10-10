@@ -18,7 +18,7 @@ function Navbar(props) {
           <li><Link to="/"><i className="fas fa-key fa-lg"></i></Link></li>  
           { 
           props.currentUser ?
-          <div onClick={()=>auth.signOut()}>SIGN OUT</div>
+          <div className="sign-out" onClick={()=>auth.signOut()}>SIGN OUT</div>
           :
           <Link to="/signin">SIGN IN</Link>
         } 
