@@ -20,7 +20,7 @@ function Navbar(props) {
           props.currentUser ?
           <div className="sign-out" onClick={()=>auth.signOut()}>SIGN OUT</div>
           :
-          <Link to="/signin">SIGN IN</Link>
+          <Link className="sign-in" to="/signin">SIGN IN</Link>
         } 
         </ul>  
         <div className="burger" onClick={()=> setMenu(!menu)}>

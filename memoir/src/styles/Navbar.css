@@ -119,6 +119,14 @@ i {
     color: white;
 }
 
+.sign-in{
+    font-size:15px !important;
+    font-weight: 1900;
+    margin-top: 8px;
+    cursor: pointer;
+    color: white;
+}
+
 li{
     margin-top: 8px;
 }
