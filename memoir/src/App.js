@@ -33,13 +33,12 @@ class App extends React.Component {
 
   return (
 
-      <BrowserRouter>    
+      <Router>    
          <div>
             <Route exact path='/' component={Write} />
             <Route exact path="/signin" component={SignIn}/>
-            <Route exact path="/signup" component={SignIn}/>
          </div>
-        </BrowserRouter>
+        </Router>
    
   );
 }}
